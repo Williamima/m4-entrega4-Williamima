@@ -20,7 +20,8 @@ VALUES
     ('Aventura', NOW(), NOW()),
     ('Fantasia', NOW(), NOW())RETURNING *;
 
-
+INSERT INTO books_categories ("bookId", "categoryId")
+VALUES (1, 2), (2, 2), (3, 2), (4, 2), (1, 3), (3, 3), (4, 3), (3, 1), (4, 1);
 
 INSERT INTO contact_infos ("phone", "email", "authorId")
-VALUES ('(44) 99123-4567', 'osvaldo@osvaldocompany.com', '8');
+VALUES ('(44) 99123-4567', 'osvaldo@osvaldocompany.com', '3');
